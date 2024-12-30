@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between; /* Space between logo and menu */
+            align-items: center;
+            padding: 1rem;
+            background-color: rgb(14, 20, 34);
+            height: 100px;
+        }
+        nav .logo {
+            width: 80px; /* Adjust logo container size */
+            height: 80px;
+        }
+        nav .logo img {
+            width: 100%; /* Ensure image fits within the container */
+            height: 90%;
+        }
+        nav .menu ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav .menu ul li {
+            list-style: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin: 0 30px;
+        }
+        nav .menu ul li a{
+         text-decoration: none;
+         color: white;
+        }
+        nav .menu ul li a:hover{
+         color: yellowgreen;
+         font-size: 1.1rem;
+        }
+        .HOME {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+        }
+        .HOME  > div {
+            width: 30%;
+        }
+        .left {
+            font-size: 2.5rem;
+            margin: 30px 0;
+           
+        }
+        .right img{
+            width: 80%;
+            margin: 120px 0;
+        }
+        .label{
+            color: yellow;
+        }
+        p{
+            font-size: 25px;
+        }
+        #element_h{
+            color: yellow;
+        }
+        
+        #element{
+            color: rgb(224, 153, 46);
+        }
+        .ABOUT_ME{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .ABOUT_ME .line{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 0;
+        }
+        .ABOUT_ME .space{
+            width: 80vw;
+            height: 2px;
+            margin: 20px 0;
+        }
+        .ABOUT_ME .s1{
+            width: 80px;
+            height: 100px;
+            margin: auto;
+        }
+        .EDUCATION{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .EDUCATION .line{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 40px 0;
+        }
+        .EDUCATION .space{
+            width: 80vw;
+            height: 2px;
+            margin: 20px 0;
+        }
+        .PROJECTS{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .PROJECTS .line{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 40px 0;
+        }
+        .PROJECTS .space{
+            width: 80vw;
+            height: 2px;
+            margin: 20px 0;
+        }
+        .CONTACT {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.CONTACT .main{
+    display: flex;
+    justify-content: center;
+}
+.CONTACT .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+}
+.CONTACT .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+.CONTACT .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 500px;
+}
+.CONTACT .line {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.CONTACT .email-row,
+.CONTACT .phone,
+.CONTACT .social-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.CONTACT .pic,
+.CONTACT .wp,
+.CONTACT .fb,
+.CONTACT .ins,
+.CONTACT .lI {
+    width: 50px;
+    height: 50px;
+}
+.CONTACT .pic img,
+.CONTACT .wp img,
+.CONTACT .fb img,
+.CONTACT .ins img,
+.CONTACT .lI img {
+    width: 100%;
+    height: auto;
+}
+
+.CONTACT h1{
+    font-size: 4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(14, 20, 34, 0.95);
+    font-size: 0.9rem;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+footer a {
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px; 
+}
+
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ll.jpg" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutMe">ABOUT ME</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="HOME">
+            <div class="left">
+                    HI, I AM <span class="label">JAHANZAIB HAIDER.</span>
+                    <div>I AM A MID-LEVEL </div>
+                    <div><span id="element_h"></span></div>
+                  
+            </div>
+            <div class="right">
+                <img src="r1.png" alt="">
+                 
+            </div>
+            
+        </section>
+        <section id="aboutMe" class="ABOUT_ME">
+            <div class="line"></div>
+            <div class="left">
+
+                <h1>INTRODUCTION:</h1>
+                    <div class="line"></div>
+                    <p>Hi, I’m JAHANZAIB HAIDER, a passionate and results-driven Java Developer with 2 years of experience in building scalable, secure, and efficient applications. I specialize in Java programming, object-oriented design, and backend development, with a strong understanding of frameworks like Spring Boot and Hibernate.
+                    </p>
+                    <div class="space"></div>
+                    <div class="s1"></div>    
+                
+                <h3>SKILLS:</h3>
+                 <div class="space"></div>
+       
+                    <li>Java Core & Advanced Java</li>
+                    <li>Data Structures</li>
+                    <li>SQL databases (MySQL, SQLite)</li>
+                    <li>Version Control (Git)</li>
+                    <li>Unit Testing (JUnit, Mockito)</li>
+                    <div class="space"></div>
+                
+                <h3>LANGUAGES :</h3>
+                    <span id="element"></span>
+   
+                <div class="s1"></div>    
+                    
+            </div>
+        </section>
+        <section id="education" class="EDUCATION">
+            <div class="line"></div>
+            <div class="left">
+
+                <h1>EDUCATION:</h1>
+                    <div class="line"></div>
+                    <h3>MATRICULATION:</h3>
+                    <li>Completed From SUPERIOR GRAMMAR SCHOOL.</li>
+                    <div class="space"></div>
+                <h3>INTERMEDIATE:</h3>
+                 <div class="space"></div>
+                    <li>From GOVT. DEGREE COLLEGE SRE III MAJEED.</li>
+                    <div class="space"></div>
+          
+                <h3>GRADUATION:</h3>
+                    <div class="space"></div>
+                    <li>UNDER GRAD STUDENT OF BSCS.</li>
+                    <div class="space"></div>
+          
+                <h3>CERTIFICATION:</h3>
+                <div class="space"></div>
+       
+                    <li>Completed a certification in Java Full Stack Development.</li>
+                    <li>Data Structures Specialist Certified.</li>
+                    <li>Microsoft Specialist.</li>
+                    
+                    
+            </div>
+        </section>
+        <section id="projects" class="PROJECTS">
+            <div class="line"></div>
+            <div class="left">
+
+                <h1>PROJECTS I CREATE:</h1>
+                    <div class="line"></div>
+                    <h3>JAVA PROJECTS:</h3>
+                    <li>SCHOOL MANAGEMENT SYSTEM.</li>
+                    <li>PHARMACY MANAGEMENT SYSTEM.</li>
+                    <li>UI DATA STRUCTURE TUTOR.</li>
+                    <div class="space"></div>
+                <h3>PYTHON PROJECTS</h3>
+                 <div class="space"></div>
+                    <li>To-Do List App.</li>
+                    <li>Expense Tracker.</li>
+                    <div class="space"></div>
+          
+                <h3>C / C++ PROJECTS :</h3>
+                    <div class="space"></div>
+                    <li>Tourism system.</li>
+                    <li>Data storation by linked list.</li>
+                    <li>Bank Management System.</li>
+                    <div class="space"></div>
+          
+                    
+            </div>
+            <div class="space"></div>
+             
+        </section>
+        
+        <section id="contact" class="CONTACT">
+            <div class="line"></div>
+            <h1>CONTACT ME</h1>
+            <div class="line"></div>
+            <div class="space"></div>
+            <div class="CONTACT">
+                <div class="left">
+                    <div class="email-row">
+                        <div class="pic">
+                            <img src="email.png" alt="Email Icon">
+                        </div>
+                        <div class="mail">
+                            <p>jahanzaib2005@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <div class="wp">
+                            <img src="what.png" alt="WhatsApp Icon">
+                        </div>
+                        <div class="num">
+                            <p>+923315790222</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <div class="fb">
+                            <img src="fb.png" alt="Facebook Icon">
+                        </div>
+                        <div class="ins">
+                            <img src="ins'.png" alt="Instagram Icon">
+                        </div>
+                        <div class="lI">
+                            <img src="li.png" alt="LinkedIn Icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="jj.png" alt="Your Profile Picture">
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        &copy; 2024 Jahanzaib Haider. All Rights Reserved. 
+        <a href="#contact">Contact Me</a>
+    </footer><script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element_h', {
+          strings: ['JAVA BACKEND DEVELOPER','C/C++ BACKEND DEVELOPER' , 'JAVA  APPLLICATION DEVELOPER'],
+          typeSpeed: 70,
+        });
+      </script>
+   
+   <script>
+        var typed = new Typed('#element', {
+          strings: ['JAVA','C++' , 'PYTHON' ,'C' ,'SQL'],
+          typeSpeed: 70,
+        });
+      </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
