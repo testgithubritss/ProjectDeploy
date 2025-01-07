@@ -247,8 +247,9 @@ li{
 /* Additional Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav {
+        position: static; /* Change from fixed to static */
         flex-direction: column;
-     /*   align-items: flex-start;*/
+        align-items: flex-start;
         height: auto;
     }
 
@@ -262,6 +263,7 @@ li{
         margin: 10px 0;
         font-size: 1rem;
     }
+
 
     .HOME {
         flex-direction: column;
@@ -329,12 +331,14 @@ li{
     }
 }
 
-@media (max-width: 480px) {
+ @media (max-width: 480px) {
     nav {
+        position: static; /* Ensure the nav is non-fixed */
         padding: 0.5rem;
     }
-    nav .menu ul{
-        margin-left: 150%;
+
+    nav .menu ul {
+        margin-left: 0; /* Adjust margin to align properly */
         justify-content: center;
         align-items: center;
     }
@@ -342,6 +346,7 @@ li{
     nav .menu ul li {
         font-size: 0.9rem;
     }
+
 
     .HOME .left {
         font-size: 1.2rem;
