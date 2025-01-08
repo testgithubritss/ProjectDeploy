@@ -39,6 +39,7 @@
         nav .logo img {
             width: 100%; /* Ensure image fits within the container */
             height: 90%;
+            position: fixed;
         }
         nav .menu ul {
             display: flex;
@@ -247,27 +248,23 @@ li{
 /* Additional Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav {
-        position: static; /* Change from fixed to static */
+        position: static;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Center align nav content */
         height: auto;
     }
 
     nav .menu ul {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Stack the menu items */
+        align-items: center; /* Center align items */
         width: 100%;
-        justify-content: center;
-        
     }
 
     nav .menu ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Add space between items */
         font-size: 1rem;
-        justify-content: center;
-        display: flex;
+        text-align: center;
     }
-
 
     .HOME {
         flex-direction: column;
@@ -335,23 +332,21 @@ li{
     }
 }
 
- @media (max-width: 480px) {
+@media (max-width: 480px) {
     nav {
-        position: static; /* Ensure the nav is non-fixed */
         padding: 0.5rem;
     }
 
     nav .menu ul {
-        margin-left: 0; /* Adjust margin to align properly */
-        justify-content: center;
+        justify-content: center; /* Center the menu on smaller screens */
         align-items: center;
-        display: flex;
+        margin-left: 0;
     }
 
     nav .menu ul li {
         font-size: 0.9rem;
-        justify-content: center;
-        display: flex;
+        margin: 5px 0; /* Slightly reduce spacing for smaller screens */
+        text-align: center;
     }
 
 
